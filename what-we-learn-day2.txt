@@ -1,0 +1,38 @@
+git diff (show by making changes to a file after making a commit)
+
+git log (commit history)
+
+git show commit-id (commit details)
+
+git commit --amend -m "Message"
+
+Learning about stash
+git stash
+git stash list
+git stash show stashID
+git stash pop (apply latest stash) (and after resolving conflicts, use git stash drop)
+git stash clear
+git stash apply stashID
+
+Moving files
+git mv file destination-folder
+
+Revert back changes
+git checkout filename
+
+delete branch locally
+git branch -d branch_name
+
+delete branch remotely
+git push origin --delete remoteBranchName
+
+renaming branch
+git branch -m old_name new_name
+
+Merging branches
+git merge branch_to_be_merged_in_current_branch
+
+Rebase example
+For example, if your local branch has commits A−>B−>C−>D and 
+the merge branch has commits A−>B−>X−>Y, then Git rebase will convert the current local branch to 
+something like A−>B−>X−>Y−>C−>D.

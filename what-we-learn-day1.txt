@@ -1,0 +1,65 @@
+initializing a new git repository
+git init
+
+Adding remote for your own repository
+git remote add origin link-to-your-repo
+
+Adding the remote for developer's repository
+git remote add upstream link-to-developer-repo
+
+For verifying the remote
+git remote -v
+
+checking the status of the working tree
+git status
+
+Adding the file for tracking by git
+git add .
+
+commiting the changes you made
+git commit -m "commit message"
+
+Switching to existing branch
+git checkout branch-name
+
+Making and switching onto new branch
+git checkout -b new-branch
+
+Pushing code from your local machine to remote server
+git push origin branch-name
+
+For fetching and merging the remote code
+git pull origin branch-name
+
+if you see rejected push, then use rebase to get rid of diamond problem
+git rebase origin/branch-name
+
+cloning a repository
+git clone repository-link-copied-from-page
+
+Steps for new repository
+1. initializing the new repository using git init.
+2. Making the new repository on github.com
+3. Check status of various files using git status while making changes
+4. adding the remote for your repository
+5. Add files using git add
+6. Commit changes using git commit
+7. Push your changes to your repo using git push
+
+Steps to fork a repository owned by by someone
+1. Open the repository github page
+2. Click on the fork button availble in the right side.
+3. Now the repository is forked into your github account.
+
+Steps to clone a repository
+1. Open the your repository page and click on Green button showing Clone or Download
+2. Copy the link and run command git clone repository-link-copied-from-page
+
+Steps to raise a new pull request
+1. clone the repository which you forked into your accout.
+2. add remote for your own repository
+3. add remote for developer's repository
+4. switch to your new feature branch
+5. Make changes and add them using git add
+6. Commit changes
+7. Push changes to origin using git push origin your-feature-branch-name
